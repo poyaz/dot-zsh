@@ -42,32 +42,5 @@ function git_prompt_info {
   #RPS1='${return_code}'
 #fi
 
-if [[ ${ZSH_THEME} = "powerlevel9k/powerlevel9k" ]]; then
-  POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-  POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
-  POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-  POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="#> "
-
-  POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user dir vcs)
-  POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_node_version ram)
-
-  POWERLEVEL9K_CUSTOM_NODE_VERSION="get_node_version"
-  POWERLEVEL9K_CUSTOM_NODE_VERSION_BACKGROUND="green"
-  POWERLEVEL9K_CUSTOM_NODE_VERSION_FOREGROUND="white"
-  POWERLEVEL9K_CUSTOM_NODE_VERSION_ICON="\u2191"
-
-  POWERLEVEL9K_OS_ICON_BACKGROUND="white"
-  POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
-  POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
-  POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
-  POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
-
-  get_node_version() {
-    ! [[ $(pwd | grep nodejs) ]] && return;
-
-    local node_version=$(node -v 2>/dev/null)
-
-    echo "${node_version:1} \u2B22"
-  }
+if [[ ${ZSH_THEME} = "xxf" ]]; then
 fi

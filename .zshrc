@@ -10,7 +10,7 @@ export PATH
 #source ~/.zsh/theme/powerlevel9k.zsh
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/pooya/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -106,7 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
 source ~/.zsh/exports.zsh
@@ -126,3 +125,12 @@ precmd() {
     tmux setenv "$(tmux display -p 'TMUX_PWD_#D')" "$PWD"
   fi
 }
+
+alias tmuxr="tmux source-file ~/.tmux.conf"
+alias nextVpn="sudo bash ~/Shell/nextVpn/nextVpn"
+source ~/.zaw/zaw.zsh
+
+zstyle ':filter-select' max-lines 3
+
+autoload -U add-zsh-hook
+add-zsh-hook chpwd update_prompt

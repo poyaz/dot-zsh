@@ -18,3 +18,7 @@ function preexec {
 function postexec {
   set_running_app
 }
+
+function update_prompt() {
+  source $HOME/.oh-my-zsh/themes/xxf.zsh-theme
+}
