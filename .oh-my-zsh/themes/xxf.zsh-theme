@@ -10,8 +10,8 @@ function box_name {
 YS_VCS_PROMPT_PREFIX1="%{$fg[white]%}on%{$reset_color%} "
 YS_VCS_PROMPT_PREFIX2=":%{$fg[cyan]%}"
 YS_VCS_PROMPT_SUFFIX="%{$reset_color%} "
-YS_VCS_PROMPT_DIRTY=" %{$fg[red]%}âœ—"
-YS_VCS_PROMPT_CLEAN=" %{$fg[green]%}âœ”ï¸Ž"
+YS_VCS_PROMPT_DIRTY=" %{$fg[red]%}¿"
+YS_VCS_PROMPT_CLEAN=" %{$fg[green]%}¿¿"
 
 # Git info.
 local git_info='$(git_prompt_info)'
@@ -88,7 +88,6 @@ PROMPT="
 ${hg_info} \
 ${git_info} \
 ${git_last_commit}
- \
 %{$terminfo[bold]$fg[white]%}â†’ %{$reset_color%}"
 
 # %{$fg[red]%}%* \
