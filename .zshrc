@@ -1,6 +1,9 @@
 source ~/.fonts/*.sh
+source /etc/environment
 
 export TERM="xterm-256color"
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -73,6 +76,7 @@ ZSH_THEME="xxf"
 plugins=(
   git
   git-prompt
+  wakatime
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -134,3 +138,5 @@ zstyle ':filter-select' max-lines 3
 
 autoload -U add-zsh-hook
 add-zsh-hook chpwd update_prompt
+
+source /usr/share/nvm/init-nvm.sh
