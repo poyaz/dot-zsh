@@ -139,4 +139,4 @@ zstyle ':filter-select' max-lines 3
 autoload -U add-zsh-hook
 add-zsh-hook chpwd update_prompt
 
-source /usr/share/nvm/init-nvm.sh
+#source /usr/share/nvm/init-nvm.sh
