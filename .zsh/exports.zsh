@@ -89,3 +89,6 @@ elif type compctl &>/dev/null; then
 fi
 ###-end-npm-completion-###
 
+
+export DOCKER_HOST=unix:///var/run/docker.sock
+
