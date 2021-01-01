@@ -1,3 +1,11 @@
+Before clone:
+
+Install .oh-my-zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 After clone project:
 
 1. Install `wakatime` from package manager or via pip
