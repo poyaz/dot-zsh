@@ -76,7 +76,7 @@ ZSH_THEME="xxf"
 plugins=(
   git
   git-prompt
-  zsh-wakatime
+  wakatime
 )
 
 source $ZSH/oh-my-zsh.sh
